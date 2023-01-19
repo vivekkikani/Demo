@@ -49,6 +49,16 @@ class Password extends CI_Controller {
         }
             return true;
     }
-}
 
+    public function checkpassdhadgda($oldpass){    
+        $user=$this->Password_model->checkpassword($id);
+        if($user->password !== md5($oldpass)){
+            $this->form_validation->set_message('checkpass','The {field} does not match');
+            return false;
+        }
+            return true;
+    }
+
+    
+}
 ?>
