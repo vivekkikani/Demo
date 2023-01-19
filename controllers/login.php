@@ -46,6 +46,11 @@ class Signin extends CI_Controller {
         $this->session->sess_destroy('id');
         redirect('signin/signin');
     }
+    
+    public function logoutss(){
+        $this->session->sess_destroy('id');
+        redirect('signin/signin');
+    }
 }
 
 ?>
