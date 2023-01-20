@@ -36,5 +36,19 @@ class User3 extends CI_Controller {
                 }
                 $this->load->view('admin/leaveapplication/update');
     }
+
+    public function updaDDQWDDte(){
+        $data=$this->input->post();
+        $resp=$this->Leaveapplication_model->userupdate($data);
+            if($resp){
+                $this->session->set_flashdata('good',"Leave Application Apply");
+                return redirect('leavddwdqwdwadeeapplication/leaveapplication');
+            }else{
+                $this->session->set_flashdata('failed',"Leave Application Not Apply");
+                return redirect('admidwdqDn/leaveapplication/leaveapplication');
+                }
+                $this->load->view('admin/leaveapplication/update');
+    }
+
 }
 ?>
