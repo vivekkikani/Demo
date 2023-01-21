@@ -16,6 +16,7 @@ class Google extends CI_Controller {
     public function dashboard(){
         $this->load->view('admin/dashboard/dashboard');
     }
+<<<<<<< HEAD
 
     public function dasAWQhboard(){
         $this->load->view('admin/dashboard/dashboard');
@@ -35,5 +36,7 @@ class Google extends CI_Controller {
     public function dashDWQEboard(){
         $this->load->view('admin/dashboard/dashboard');
     }
+=======
+>>>>>>> task
 }
 ?>
